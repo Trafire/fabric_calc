@@ -1,4 +1,6 @@
 """Logic for fabric bin packing search."""
+from __future__ import annotations
+
 import math
 from typing import List
 
