@@ -37,7 +37,7 @@ def calc_material_dimensions(yards):
 def bin_packing_calculator(rectangles, material):
     """Bin packing algorthm."""
     # behavior seems reverse, when rotation is turned off it allows rotation
-    packer = newPacker(rotation=True)
+    packer = newPacker(rotation=False)
     for rectangle in rectangles:
         packer.add_rect(*rectangle)
     # inf count means it will add bins as required
@@ -101,7 +101,7 @@ def rotate_rectangles(rectangles):
             rectangles[index] = rectangles[index][1], rectangles[index][0]
 
 
-def fabric_calc(rectangles: List[tuple[int, int]]) -> int:
+def fabric_calc(rectangles) -> int:
     """Get number of yards of fabric for tackboards."""
     rotate_rectangles(rectangles)
     return binary_seach(rectangles)
