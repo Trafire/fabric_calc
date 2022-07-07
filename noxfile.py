@@ -37,3 +37,14 @@ def lint(session: Session) -> None:
     args = session.posargs or locations
     session.run("black", *locations)
     session.run("flake8", *args)
+
+
+@nox.session(python="3.8")
+def safety(session: Session) -> None:
+    """Scan dependencies for insecure packages."""
+    session.run(
+        "safety",
+        "check",
+        "--full-report",
+        external=True,
+    )
