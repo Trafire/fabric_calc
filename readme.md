@@ -1,6 +1,6 @@
 # Fabric Calc
 
-provide a list of rectangles to 
+List of rectangle, a rectangle is a tuple of two ints, (length, width)
 ```python
 
 from main import fabric_calc
