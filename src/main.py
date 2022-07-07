@@ -90,7 +90,6 @@ def binary_seach(rectangles, search_space=None) -> int:
     if check is True:
         return median
     search_space = redefine_search_space(search_space, median, result)
-    print(search_space, median)
     return binary_seach(rectangles, search_space)
 
 
@@ -105,15 +104,14 @@ def rotate_rectangles(rectangles):
 def fabric_calc(rectangles: List[tuple[int, int]]) -> int:
     """Get number of yards of fabric for tackboards."""
     rotate_rectangles(rectangles)
-    print(rectangles)
     return binary_seach(rectangles)
 
+if __name__ == "__main__":
 
-# rectangles = [
-#         (33, 36),
-#         (33, 36),
-#         (33, 36),
-#         (33, 36),
-#     ]
-# rotate_rectangles(rectangles)
-# assert check_answer(rectangles, 2) == (True, 1)
+    rectangles = [
+            (30, 40),
+            (55, 36),
+            (33, 16),
+            (20, 36),
+        ]
+    print(fabric_calc(rectangles))
