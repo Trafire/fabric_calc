@@ -106,12 +106,13 @@ def fabric_calc(rectangles: List[tuple[int, int]]) -> int:
     rotate_rectangles(rectangles)
     return binary_seach(rectangles)
 
+
 if __name__ == "__main__":
 
     rectangles = [
-            (30, 40),
-            (55, 36),
-            (33, 16),
-            (20, 36),
-        ]
+        (30, 40),
+        (55, 36),
+        (33, 16),
+        (20, 36),
+    ]
     print(fabric_calc(rectangles))
