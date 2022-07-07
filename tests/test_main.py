@@ -9,7 +9,6 @@ from main import (
     get_median,
     inches_to_yards,
     max_size,
-    rotate_rectangles,
     yard_to_inches,
 )
 
@@ -49,14 +48,13 @@ def test_check_answer():
         (66, 36),
         (66, 36),
     ]
-    rotate_rectangles(rectangles)
+
     assert check_answer(rectangles, 3) == (True, 1)
     assert check_answer(rectangles, 1) == (False, 3)
 
     rectangles = [
         (66, 36),
     ]
-    rotate_rectangles(rectangles)
     assert check_answer(rectangles, 1) == (True, 1)
 
     rectangles = [
@@ -65,7 +63,7 @@ def test_check_answer():
         (33, 36),
         (33, 36),
     ]
-    rotate_rectangles(rectangles)
+
     assert check_answer(rectangles, 3) == (True, 1)
 
 
@@ -84,7 +82,7 @@ def test_bin_packing_calculator():
         (32, 32),
         (32, 32),
     ]
-    rotate_rectangles(rectangles)
+
     material = calc_material_dimensions(2)
     assert bin_packing_calculator(rectangles, material) == 1
 
@@ -94,7 +92,7 @@ def test_bin_packing_calculator():
         (33, 36),
         (33, 36),
     ]
-    rotate_rectangles(rectangles)
+
     material = calc_material_dimensions(3)
     assert bin_packing_calculator(rectangles, material) == 1
 
