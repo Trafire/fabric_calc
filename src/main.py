@@ -93,14 +93,6 @@ def binary_seach(rectangles, search_space=None) -> int:
     return binary_seach(rectangles, search_space)
 
 
-# def rotate_rectangles(rectangles):
-#     """Make rectangles so first parameter is always bigger."""
-#
-#     for index in range(len(rectangles)):
-#         if rectangles[index][0] > rectangles[index][1]:
-#             rectangles[index] = rectangles[index][1], rectangles[index][0]
-
-
 def combine_rectangles(data: List[tuple[int, int, int]]) -> List:
     """Combine list of rectangles to"""
     rectangles = []
