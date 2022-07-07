@@ -4,6 +4,7 @@ from main import (
     bin_packing_calculator,
     calc_material_dimensions,
     check_answer,
+    combine_rectangles,
     fabric_calc,
     get_median,
     inches_to_yards,
@@ -101,9 +102,28 @@ def test_bin_packing_calculator():
 def test_fabric_calc():
     """Test Fabric Calc."""
     rectangles = [
-        (32, 65),
+        (32, 65, 1),
     ]
     print(check_answer(rectangles, 1))
     print(calc_material_dimensions(1))
     print(bin_packing_calculator(rectangles, calc_material_dimensions(1)))
     assert fabric_calc(rectangles) == 1
+
+
+def test_combine_rectangles():
+    assert combine_rectangles([(32, 65, 1)]) == [(32, 65)]
+    assert combine_rectangles([(32, 65, 3)]) == [(32, 65), (32, 65), (32, 65)]
+    assert combine_rectangles([(32, 65, 3), (32, 65, 2)]) == [
+        (32, 65),
+        (32, 65),
+        (32, 65),
+        (32, 65),
+        (32, 65),
+    ]
+    assert combine_rectangles([(32, 65, 3), (31, 65, 2)]) == [
+        (32, 65),
+        (32, 65),
+        (32, 65),
+        (31, 65),
+        (31, 65),
+    ]
