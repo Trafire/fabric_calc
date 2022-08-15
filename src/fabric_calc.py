@@ -103,7 +103,7 @@ def combine_rectangles(data: List[tuple[int, int, int]]) -> List:
     return rectangles
 
 
-def fabric_calc(data: List[tuple[int, int, int]]) -> int:
+def calculate(data: List[tuple[int, int, int]]) -> int:
     """Get number of yards of fabric for tackboards."""
     rectangles = combine_rectangles(data)
     # rotate_rectangles(rectangles)
@@ -114,4 +114,4 @@ if __name__ == "__main__":
     example_data = [
         (30, 40, 10),
     ]
-    print(fabric_calc(example_data))
+    print(calculate(example_data))

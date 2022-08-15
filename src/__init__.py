@@ -1,2 +1,5 @@
 """Source files."""
-from .fabric_calc import fabric_calc
+from .fabric_calc import calculate
+
+
+__all__ = ["calculate"]
