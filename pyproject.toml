@@ -13,8 +13,13 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "rectpack~=0.2.2",
+    'importlib-metadata; python_version<"3.8"',
+]
 [build-system]
-requires = ["rectpack~=0.2.2","setuptools"]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
 
 
 [project.urls]
