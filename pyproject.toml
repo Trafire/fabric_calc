@@ -1,6 +1,6 @@
 [project]
 name = "fabric_cuts"
-version = "1.2.3"
+version = "1.2.4"
 authors = [
   { name="Antoine Wood", email="antoinewood@gmail.com" },
 ]
