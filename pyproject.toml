@@ -1,0 +1,19 @@
+[project]
+name = "fabric_cuts_trafire"
+version = "0.1.0"
+authors = [
+  { name="Antoine Wood", email="antoinewood@gmail.com" },
+]
+description = "Library Used to calculate fabric needed for covering rectangular surfaces"
+readme = "readme.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Trafire/fabric_calc"
+"Bug Tracker" = "https://github.com/Trafire/fabric_calc/issues"
