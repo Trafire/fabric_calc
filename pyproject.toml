@@ -1,5 +1,5 @@
 [project]
-name = "fabric_cuts_trafire"
+name = "fabric_cuts"
 version = "0.1.0"
 authors = [
   { name="Antoine Wood", email="antoinewood@gmail.com" },
