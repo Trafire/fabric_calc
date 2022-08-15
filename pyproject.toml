@@ -1,6 +1,6 @@
 [project]
-name = "fabric_cuts"
-version = "1.2.4"
+name = "fabric_calc"
+version = "1.2.7"
 authors = [
   { name="Antoine Wood", email="antoinewood@gmail.com" },
 ]
@@ -25,3 +25,8 @@ build-backend = "setuptools.build_meta"
 [project.urls]
 "Homepage" = "https://github.com/Trafire/fabric_calc"
 "Bug Tracker" = "https://github.com/Trafire/fabric_calc/issues"
+
+[tool.setuptools]
+packages = ["", "fabric_calc", "mypkg.subpkg2"]
+
+package-dir = {"" = "src"}
