@@ -16,9 +16,9 @@ def check_answer(rectangles: List[tuple[int, int]], yards: int) -> tuple[bool, i
     >>> rectangles = [(10,10), (20,20)]
     >>> yards = 2
     >>> check_answer(rectangles, yards)
-    False, 1
+    (False, 1)
     >>> check_answer(rectangles, yards)
-    >>> True, 1
+    (True, 1)
 
     Args:
         rectangles (List[tuple[int,int]): List of tuples in form of [(x, y)]

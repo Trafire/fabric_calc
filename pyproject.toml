@@ -1,6 +1,6 @@
 [project]
 name = "fabric_cuts"
-version = "1.2.0"
+version = "1.2.1"
 authors = [
   { name="Antoine Wood", email="antoinewood@gmail.com" },
 ]
@@ -10,9 +10,12 @@ license = { file="LICENSE" }
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: MIT License",s
     "Operating System :: OS Independent",
 ]
+[build-system]
+requires = ["rectpack~=0.2.2"]
+
 
 [project.urls]
 "Homepage" = "https://github.com/Trafire/fabric_calc"

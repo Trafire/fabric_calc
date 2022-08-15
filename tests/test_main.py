@@ -1,6 +1,6 @@
 """Tests for main module."""
 
-from main import (
+from fabric_calc import (
     bin_packing_calculator,
     calc_material_dimensions,
     check_answer,
