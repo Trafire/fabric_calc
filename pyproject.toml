@@ -1,32 +1,22 @@
-[project]
+[tool.poetry]
 name = "fabric_calc"
-version = "1.2.7"
-authors = [
-  { name="Antoine Wood", email="antoinewood@gmail.com" },
-]
-description = "Library Used to calculate fabric needed for covering rectangular surfaces"
-readme = "readme.md"
-license = { file="LICENSE" }
-requires-python = ">=3.7"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
-dependencies = [
-    "rectpack~=0.2.2",
-    'importlib-metadata; python_version<"3.8"',
-]
+version = "1.2.8"
+authors = ["Antoine Wood <antoinewood@gmail.com>"]
+description = "Promail: The Python Email Automation Framework"
+license = "GNU"
+readme = "README.md"
+include = []
+
+[tool.poetry.dependencies]
+rectpack = "~=0.2.2"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+
 [build-system]
-requires = ["setuptools", "setuptools-scm"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
-
-[project.urls]
-"Homepage" = "https://github.com/Trafire/fabric_calc"
-"Bug Tracker" = "https://github.com/Trafire/fabric_calc/issues"
-
-[tool.setuptools]
-packages = ["", "fabric_calc", "mypkg.subpkg2"]
-
-package-dir = {"" = "src"}
+[tool.pytest.ini_options]
+pythonpath = ["src"]
