@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fabric_calc"
-version = "1.2.8"
+version = "1.2.9"
 authors = ["Antoine Wood <antoinewood@gmail.com>"]
 description = "Promail: The Python Email Automation Framework"
 license = "GNU"
